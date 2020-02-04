@@ -20,17 +20,17 @@ Given(/^I am on '(\S+)'/, async function (url) {
  * @memberof Google Search
  * @name When-I-search-for-'(\S+)'
  */
-When(/^I search for '(\S+)'/, async function (searchValue) {
+When(/^I search for '(.+)'/, async function (searchValue) {
   await setTextBox(this, googlePage.searchBox, `${searchValue}\n`);
 });
 
 /**
  * @example <caption>Gherkin</caption>
- * Then the top results should contain '<searchValue>'
+ * Then the top results should contain '<expectedValue>'
  * @memberof Google Search
- * @name Then-the-top-results-should-contain-'<searchValue>'
+ * @name Then-the-top-results-should-contain-'<expectedValue>'
  */
-Then(/^the top results should contain '(\S+)'/, async function (expectedValue) {
+Then(/^the top results should contain '(.+)'/, async function (expectedValue) {
   const actualTopResults = await getElementText(this, googlePage.topResult);
   expect(actualTopResults).to.include(expectedValue);
 });

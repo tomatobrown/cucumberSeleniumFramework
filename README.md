@@ -1,4 +1,4 @@
-Cuke Sample
+Cucumber Selenium Framework
 =================
 
 Sample  Cucumber test framework for Field Nation
@@ -55,14 +55,6 @@ Tags
 -------------
 * @mute - turning off test (any reason other than flakiness)
 * @quarantine - turning off flake test
-* @readyForDev - indicates that the gherkin is ready for someone to finish the automation
-* @deprecated - plan to delete because not longer valid
-* @reuseData - will attempt to only create the data one time per feature file
-* @time-6am-12pm - will only run on cron with within given time range
-
-Writing Tests - site config
--------------
-Since tests do run in parallel do not share site across different features unless it is known that the relevant components to the site are not being tampered with be a different feature file.
 
 Available Step Definitations
 ---------------------------------
