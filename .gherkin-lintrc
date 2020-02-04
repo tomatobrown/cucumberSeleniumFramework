@@ -1,0 +1,85 @@
+{
+	"max-scenarios-per-file": [
+		"off",
+		{
+			"maxScenarios": 10
+		}
+	],
+	"no-unused-variables": "on",
+	"no-empty-background": "on",
+	"no-background-only-scenario": "on",
+	"no-files-without-scenarios": "on",
+	"no-unnamed-features": "on",
+	"no-unnamed-scenarios": "on",
+	"no-dupe-scenario-names": "on",
+	"no-dupe-feature-names": "on",
+	"no-partially-commented-tag-lines": "on",
+	"no-trailing-spaces": "on",
+	"new-line-at-eof": [
+		"on",
+		"yes"
+	],
+	"no-multiple-empty-lines": "on",
+	"no-empty-file": "on",
+	"no-scenario-outlines-without-examples": "on",
+	"name-length": [
+		"on",
+		{
+			"Feature": 50,
+			"Scenario": 70,
+			"Step": 170
+		}
+	],
+	"no-restricted-tags": [
+		"off",
+		{
+			"tags": []
+		}
+	],
+	"allowed-tags": [
+		"off",
+		{
+			"tags": [
+    			"@solo",
+				"@mute",
+				"@quarantine",
+				"@FMS-869",
+				"@MKT-281",
+				"@TAI-78",
+				"@TAI-98",
+				"@TAI-118",
+				"@TAI-120",
+				"@TAI-119",
+				"@MAR-3537",
+				"@FMS-908",
+				"@TAI-121",
+				"@TAI-124",
+				"@TAI-122",
+                "@TCM-4715"
+			]
+		}
+	],
+	"use-and": "on",
+	"no-duplicate-tags": "on",
+	"no-superfluous-tags": "on",
+	"no-homogenous-tags": "on",
+	"one-space-between-tags": "on",
+	"indentation": [
+		"on",
+		{
+			"Feature": 0,
+			"Background": 2,
+			"Scenario": 2,
+			"Step": 4,
+			"Examples": 4,
+			"example": 6,
+			"given": 4,
+			"when": 4,
+			"then": 4,
+			"and": 4,
+			"but": 4,
+			"feature tag": 0,
+			"scenario tag": 2
+		}
+	]
+}

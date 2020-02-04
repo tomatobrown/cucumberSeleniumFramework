@@ -1,0 +1,75 @@
+{
+  "name": "cucumberSeleniumFramework",
+  "version": "0.1.0",
+  "description": "Cucumber JS example project",
+  "engines": {
+    "node": ">=8.12.0"
+  },
+  "scripts": {
+    "generate-report": "cuke-skywalker-report",
+    "gherkin-lint": "node ./node_modules/gherkin-lint features -c ./.gherkin-lintrc",
+    "json2xml": "node ./bin/json2xml.js ./reports/combined.json",
+    "rmBlankJson": "node ./bin/removeBlankJSON.js",
+    "lint": "eslint features utils",
+    "lint-fix": "eslint features utils --fix",
+    "rerun": "sh ./rerun.sh",
+    "smokeTest": "PLATFORM=chrome cuke-skywalker -t '@smokeTest'",
+    "test": "cucumber-js -t 'not (@mute or @quarantine)'",
+    "test-dry": "PLATFORM=none cucumber-js -d -t 'not (@mute or @quarantine or @readyForDev or @deprecated or @smokeTest)'",
+    "test-wip": "node ./node_modules/cucumber/bin/cucumber-js -t @wip",
+    "test-parallel": "cuke-skywalker -t 'not (@mute or @quarantine or @readyForDev or @deprecated or @smokeTest)'",
+    "test-parallel-dry": "PLATFORM=none cuke-skywalker -d -t 'not (@mute or @quarantine or @readyForDev or @deprecated or @smokeTest)'",
+    "test-only": "cucumber-js -t",
+    "build-docs": "documentation build features/step_definitions/**/*.js --github --format md --config documentation.yml > ./docs/STEP_DEFINITIONS.md && node ./bin/parseDocs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tomatobrown/cucumberSeleniumFramework.git"
+  },
+  "author": "Tim Mader-Brown <tomatobrown@gmail.com",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run gherkin-lint"
+    }
+  },
+  "devDependencies": {
+    "chai-string": "^1.4.0",
+    "chromedriver": "^79.0.3",
+    "color": "^3.0.0",
+    "cuke-skywalker": "^1.1.1",
+    "date-and-time": "^0.6.3",
+    "documentation": "^11.0.1",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "fs-extra": "^4.0.2",
+    "gherkin-lint": "^3.3.3",
+    "husky": "^1.2.0",
+    "node-fetch": "^2.2.0",
+    "object-path": "^0.11.4",
+    "sanitize-filename": "^1.6.1",
+    "typescript": "^3.4.3",
+    "yargs": "^15.0.2"
+  },
+  "dependencies": {
+    "better-npm-run": "^0.1.1",
+    "bluebird": "^3.5.1",
+    "chai": "^4.2.0",
+    "chrono-node": "^1.3.5",
+    "cookie": "^0.3.1",
+    "csv": "^5.1.2",
+    "cucumber": "^5.1.0",
+    "cucumber-junit": "^1.7.1",
+    "faker": "^4.1.0",
+    "js-yaml": "^3.13.1",
+    "jsdom": "^13.2.0",
+    "jsontoxml": "^1.0.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.22.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "selenium-webdriver": "3.6.0",
+    "xpath-to-css": "^1.0.3"
+  }
+}

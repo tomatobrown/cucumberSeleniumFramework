@@ -1,0 +1,4 @@
+{
+  "searchBox": "//input[@name='q']",
+  "topResult": "//*[text()='Web results']/following-sibling::div/div"
+}

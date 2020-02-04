@@ -1,0 +1,17 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "extends": "eslint-config-airbnb-base",
+    "rules": {
+        "consistent-return": "off",
+        "func-names": "off",
+        "quotes": [
+            "error", "backtick", "avoid-escape"    // http://eslint.org/docs/rules/quotes
+        ],
+        "no-param-reassign": "off",
+        "no-restricted-syntax": "off",
+        "no-await-in-loop": "off",
+    }
+}
