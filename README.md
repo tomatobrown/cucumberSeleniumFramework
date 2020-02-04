@@ -76,7 +76,7 @@ Tips
 * Install the Cucumber Plug-in
     * enabled jump to step definition
 * Use Run configs for better debugging
-    * ![picture alt](../resources/images/runConfig.png "Sample Run Config")
+    * ![picture alt](./resources/images/runConfig.png "Sample Run Config")
     * For color output use
 ```--format-options '{"colorsEnabled": true}'```
     * Note you can only add a breakpoint on javascript code line, just run in debug mode and the test should stop at the break
