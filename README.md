@@ -1,7 +1,7 @@
 Cucumber Selenium Framework
 =================
 
-Sample  Cucumber test framework for Field Nation
+Sample  Cucumber test framework for anyone and everyone
 
 Setup
 -----
