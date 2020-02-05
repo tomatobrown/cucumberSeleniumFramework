@@ -1,14 +1,11 @@
 Cucumber Selenium Framework
 =================
-
-Sample  Cucumber test framework for anyone and everyone
+Sample Cucumber Test Framework for anyone and everyone
 
 Setup
 -----
 
 Install NodeJS >=8.3
-
-Make sure you're in the test (`cucumber`) directory and install dependencies:
 
 ```shell 
 npm install
@@ -16,7 +13,7 @@ npm install
 
 Environment  Variables
 ---------------------------------
-  * ENVIRONMENT - (string) test environment to target, 'local' targets local monolith
+  * ENVIRONMENT - (string) test environment
   * GRID - (bool) true will use the selenium grid, false will run locally
   * PLATFORM - (string) browser name - chrome, ie, firefox, iPhone 5, etc...
   * SELENIUM_GRID_IP - (string) ip address of the selenium grid
@@ -43,12 +40,12 @@ ENVIRONMENT=local PLATFORM=chrome node ./node_module/.bin/cucumber-js -t @wip
 
 This will run all tests against `test2`. The environment and platform are controlled by environment variables.
 ```shell
-ENVIRONMENT=test2 PLATFORM=firefox npm test
+ENVIRONMENT=sandbox PLATFORM=firefox npm test
 ```
 
 You can add normal cucumber parameters after a pair of hyphens.
 ```shell
-npm test -- features/workOrders.feature:3
+npm test -- features/googleSearch.feature:3
 ```
 
 Tags
@@ -56,9 +53,6 @@ Tags
 * @mute - turning off test (any reason other than flakiness)
 * @quarantine - turning off flake test
 
-Available Step Definitations
----------------------------------
-[See this document](./docs/STEP_DEFINITIONS.md)
 
 Contributing
 ---------------------------------
