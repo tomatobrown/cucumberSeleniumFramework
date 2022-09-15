@@ -39,7 +39,7 @@
     "color": "^3.0.0",
     "cuke-skywalker": "^1.1.1",
     "date-and-time": "^0.6.3",
-    "documentation": "^11.0.1",
+    "documentation": "^14.0.0",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
